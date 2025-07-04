@@ -56,22 +56,22 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
 4) Folder Structure
 
    Zomato-WebApp/
-   
+
    ├── Jenkinsfile
-   
+
    ├── pom.xml
-   
+
    ├── tomcat-users.xml
 
    ├── README.md
 
    └── zomato/
 
-   ├── css/
+       ├── css/
 
-   └── html/
+       └── html/
 
-5) How to Run Locally
+6) How to Run Locally
  
     # Clone the repo :
          - git clone https://github.com/satyajit929/Zomato-WebApp.git
@@ -81,6 +81,16 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
 
     # Run in Docker (after image is built)
          - docker run -d -p 8080:8080 zomato-webapp
+
+7) Summary :
+   
+   1) Full DevSecOps pipeline from code to container.
+
+   2) Security integrated at multiple stages (SonarQube, Node, OWASP, Trivy).
+
+   3) Dockerized deployment using DockerHub and containers.
+
+   4) Built for learning and showcasing end-to-end DevOps skills.
 
 
 
