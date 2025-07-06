@@ -10,18 +10,18 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
 
 2) Tech Stack & Tools Used
 
-   | Stage                  | Tool/Tech                     |
-   |------------------------|-------------------------------|
-   | Version Control        | Git & GitHub                  |
-   | Build Tool             | Apache Maven                  |
-   | CI/CD Automation       | Jenkins                       |
-   | Static Code Analysis   | SonarQube                     |
-   | Node Security Scan     | Node Security (npm audit)     |
-   | Dependency Check       | OWASP Dependency Check        |
-   | Containerization       | Docker                        |
-   | Image Vulnerability    | Trivy                         |
-   | Image Registry         | DockerHub                     |
-   | Deployment             | Docker Container / Kubernetes |
+       | Stage                  | Tool/Tech                     |
+       |------------------------|-------------------------------|
+       | Version Control        | Git & GitHub                  |
+       | Build Tool             | Apache Maven                  |
+       | CI/CD Automation       | Jenkins                       |
+       | Static Code Analysis   | SonarQube                     |
+       | Node Security Scan     | Node Security (npm audit)     |
+       | Dependency Check       | OWASP Dependency Check        |
+       | Containerization       | Docker                        |
+       | Image Vulnerability    | Trivy                         |
+       | Image Registry         | DockerHub                     |
+       | Deployment             | Docker Container / Kubernetes |
 
 3) CI/CD Pipeline Stages
 
@@ -54,22 +54,15 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
            - Deploys the Docker image as a running container.
 
 4) Folder Structure
-
-   Zomato-WebApp/
-
-   ├── Jenkinsfile
-
-   ├── pom.xml
-
-   ├── tomcat-users.xml
-
-   ├── README.md
-
-   └── zomato/
-
-       ├── css/
-
-       └── html/
+ 
+       Zomato-WebApp/
+       ├── Jenkinsfile
+       ├── pom.xml
+       ├── tomcat-users.xml
+       ├── README.md
+       └── zomato/
+          ├── css/  
+          └── html/
 
 6) How to Run Locally
  
