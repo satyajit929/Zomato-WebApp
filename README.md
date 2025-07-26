@@ -1,14 +1,14 @@
-Zomato WebApp - DevSecOps CI/CD Pipeline
+# Zomato WebApp - DevSecOps CI/CD Pipeline
 
 This project is a Zomato front page UI clone built using HTML and CSS, integrated into a complete DevSecOps CI/CD pipeline. The application is built with Maven, analyzed with SonarQube, scanned with Node Security and OWASP, containerized using Docker, scanned with Trivy, pushed to DockerHub, and deployed as a container.
 
-1) Pipeline Overview
+## Pipeline Overview
 
    This project follows a full DevSecOps lifecycle:
 
        Code → GitHub → Jenkins → SonarQube → Node Security Scan → OWASP Dependency Check → Docker Build → Trivy Image Scan → DockerHub Push → Container Deployment
 
-2) Tech Stack & Tools Used
+## Tech Stack & Tools Used
 
        | Stage                  | Tool/Tech                     |
        |------------------------|-------------------------------|
@@ -23,7 +23,7 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
        | Image Registry         | DockerHub                     |
        | Deployment             | Docker Container / Kubernetes |
 
-3) CI/CD Pipeline Stages
+## CI/CD Pipeline Stages
 
    1. Code Stage :
            - HTML/CSS code is written and pushed to GitHub repo.
@@ -53,7 +53,7 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
    9. Container Deployment :
            - Deploys the Docker image as a running container.
 
-4) Folder Structure
+## Folder Structure
  
        Zomato-WebApp/
        ├── Jenkinsfile
@@ -64,7 +64,7 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
           ├── css/  
           └── html/
 
-6) How to Run Locally
+## How to Run Locally
  
     # Clone the repo :
          - git clone https://github.com/satyajit929/Zomato-WebApp.git
@@ -75,7 +75,7 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
     # Run in Docker (after image is built)
          - docker run -d -p 8080:8080 zomato-webapp
 
-7) Summary :
+## Summary :
    
    1) Full DevSecOps pipeline from code to container.
 
