@@ -25,33 +25,33 @@ This project is a Zomato front page UI clone built using HTML and CSS, integrate
 
 ## CI/CD Pipeline Stages
 
-   1. Code Stage :
-           - HTML/CSS code is written and pushed to GitHub repo.
+   ### Code Stage :
+            HTML/CSS code is written and pushed to GitHub repo.
 
-   2. Build Stage :
-           - Jenkins pulls code from GitHub.
-           - Maven packages it into a `.war` file.
+   ### Build Stage :
+            Jenkins pulls code from GitHub.
+            Maven packages it into a `.war` file.
 
-   3. Static Code Analysis :
-           - Jenkins sends the code to **SonarQube** for quality checks (code smells, bugs, coverage).
+   ### Static Code Analysis :
+            Jenkins sends the code to **SonarQube** for quality checks (code smells, bugs, coverage).
 
-   4. Node Security Audit :
-           - Scans for vulnerabilities in dependencies using `npm audit` (if applicable).
+  ### Node Security Audit :
+            Scans for vulnerabilities in dependencies using `npm audit` (if applicable).
 
-   5. OWASP Dependency Check :
-           - Scans for known vulnerabilities in Java dependencies using OWASP.
+   ### OWASP Dependency Check :
+            Scans for known vulnerabilities in Java dependencies using OWASP.
 
-   6. Docker Build :
-           - Creates a Docker image for the project.
+  ### Docker Build :
+            Creates a Docker image for the project.
 
-   7. Trivy Scan :
-           - Scans the Docker image for security vulnerabilities before pushing.
+   ### Trivy Scan :
+            Scans the Docker image for security vulnerabilities before pushing.
 
-   8. DockerHub Push :
-           - Securely pushes the verified Docker image to DockerHub.
+  ### DockerHub Push :
+            Securely pushes the verified Docker image to DockerHub.
 
-   9. Container Deployment :
-           - Deploys the Docker image as a running container.
+   ### Container Deployment :
+            Deploys the Docker image as a running container.
 
 ## Folder Structure
  
